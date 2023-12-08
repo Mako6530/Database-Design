@@ -60,5 +60,7 @@ if change_discount == "y":
     mycursor. execute (f"UPDATE Product SET Sale = '{new_discount}' WHERE Product_title = '{prod_id}'")
     print(f"Your new discount on product {prod_id} is {new_discount}")
 
+mydb.commit()
+
 mydb.close()
 
